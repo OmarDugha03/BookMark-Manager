@@ -1,0 +1,11 @@
+export {default as bars} from "./icon-hamburger.svg" ;
+export {default as close} from "./icon-close.svg" ;
+export {default as logo } from "./logo-bookmark.svg" ;
+export {default as hero } from "./illustration-hero.svg" ;
+export {default as fe1 } from "./illustration-features-tab-1.svg" ;
+export {default as fe2 } from "./illustration-features-tab-2.svg" ;
+export {default as fe3 } from "./illustration-features-tab-3.svg" ;
+export {default as chrome } from "./logo-chrome.svg" ;
+export {default as firefox } from "./logo-firefox.svg" ;
+export {default as opera } from "./logo-opera.svg" ;
+export {default as errorIcon } from "./icon-error.svg" ;
