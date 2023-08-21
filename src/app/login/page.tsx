@@ -1,11 +1,7 @@
 "use client";
 
-import { FC } from "react";
-
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
-  return <>th</>;
+const Login = ({}) => {
+  return <div>login</div>;
 };
 
-export default page;
+export default Login;

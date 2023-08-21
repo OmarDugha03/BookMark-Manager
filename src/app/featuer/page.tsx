@@ -1,9 +1,5 @@
-import { FC } from "react";
-
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+const Feature = ({}) => {
   return <div>feature</div>;
 };
 
-export default page;
+export default Feature;

@@ -12,18 +12,18 @@ const Hero: FC<HeroProps> = ({}) => {
       <div className="lg:px-36">
         <Text size="h1">A Simple BookMark Manager</Text>
         <Text className="py-4 text-lg font-bold text-center text-gray-500 lg:text-left">
-          A clean and simple interface to organize your favourite websites. Open
+          A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </Text>
         <div className="flex items-center justify-center py-16 mx-0 lg:justify-start ">
           <Button
             variant="mine"
-            className="px-4 py-6 mb-2 mr-2 font-medium transition-all shadow-[-1px_0px_34px_5px_#5368df] duration-200 ease-in-out delay-100 rounded-lg hover:text-slate-900 hover:bg-slate-200 ">
+            className="px-4 py-6 mb-2 mr-2 transition-all shadow-[-1px_0px_34px_5px_#5368df] duration-200 ease-in-out delay-100 rounded-lg  ">
             Get it on Chrome
           </Button>
           <Button
             variant="default"
-            className="px-4  py-6 mb-2 text-bold hover:text-white  font-medium transition-all shadow-[0px_0px_12px_0px_#718096]  duration-200 ease-in-out delay-100 border rounded-lg ">
+            className="px-4  py-6 mb-2 text-bold hover:text-white  transition-all shadow-[0px_0px_12px_0px_#718096]  duration-200 ease-in-out delay-100 border rounded-lg ">
             Get it On FireFox
           </Button>
         </div>

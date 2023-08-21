@@ -1,5 +1,15 @@
 import "./globals.css";
 import { Header } from "@/components/index";
+import { Montserrat } from "next/font/google";
+import { Metadata } from "next";
+
+const montserrat = Montserrat({ subsets: ["latin"], weight: "400" });
+
+export const metadata: Metadata = {
+  title: "BookMark Manager ",
+  description: "A simple and easy to use book mark ",
+  icons: "./icon.svg",
+};
 
 export default function RootLayout({
   children,
@@ -8,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"w-full bg-slate-50"}>
+      <body className={montserrat.className + " w-full bg-slate-50"}>
         <Header />
         {children}
       </body>

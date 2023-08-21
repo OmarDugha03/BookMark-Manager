@@ -8,8 +8,8 @@ const List: FC<ListProps> = ({}) => {
   const listInfo = [
     {
       id: 0,
-      text: "Featuer",
-      href: "/featuer",
+      text: "Feature",
+      href: "/feature",
     },
     {
       id: 1,
@@ -35,9 +35,9 @@ const List: FC<ListProps> = ({}) => {
             key={item.id}
             href={item.href}
             className={classNames(
-              "px-[2.5rem]  py-2 mb-2 mr-2 text-sm font-medium transition-all duration-200 ease-in-out delay-100  ",
+              "px-[2.5rem]  py-2 mb-2 mr-2 text-sm  hover:font-medium transition-all duration-200 ease-in-out delay-100 font-bold  ",
               item.text === "Login"
-                ? " py-2 transition-all duration-200 ease-in-out delay-100 bg-gradient-to-br text-white bg-orange-400 hover:text-orange-400 hover:bg-transparent border border-transparent  focus:ring-2 focus:outline-none focus:ring-orange-400 hover:border hover:border-orange-400 shadow-sm font-medium rounded-lg text-sm px-5 text-center mr-2 mb-2 "
+                ? " py-2 transition-all hover:font-bold duration-200 ease-in-out delay-100 bg-gradient-to-br text-white bg-orange-400 hover:text-orange-400 hover:bg-transparent border border-transparent  focus:ring-2 focus:outline-none focus:ring-orange-400 hover:border hover:border-orange-400 shadow-sm font-medium rounded-lg text-sm px-5 text-center mr-2 mb-2 "
                 : "hover:bg-[#5368df]  font-bold  text-slate-900 hover:text-white    rounded-lg "
             )}>
             {item.text}

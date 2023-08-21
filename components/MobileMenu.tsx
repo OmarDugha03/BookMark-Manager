@@ -3,15 +3,16 @@ import { bars, close } from "@/Images/*";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function MobileMenu() {
   const menuInfo = [
-    { id: 0, text: "Feature" },
-    { id: 1, text: "Pricing" },
-    { id: 2, text: "Contact" },
-    { id: 3, text: "Login" },
+    { id: 0, text: "Feature", href: "/feature" },
+    { id: 1, text: "Pricing", href: "/Pricing" },
+    { id: 2, text: "Contact", href: "/Contact" },
+    { id: 3, text: "Login", href: "/Login" },
   ];
-  const [toogle, setToggle] = useState<boolean>(true);
+  const [toggle, setToggle] = useState<boolean>(true);
   function handleToggle() {
     return setToggle((prev) => {
       return !prev;
@@ -24,7 +25,7 @@ function MobileMenu() {
           <Menu.Button
             onClick={handleToggle}
             className="inline-flex justify-center w-full py-2 text-sm font-medium text-white rounded-md hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            {toogle ? (
+            {toggle ? (
               <Image
                 className="p-4 "
                 src={bars}
@@ -55,13 +56,14 @@ function MobileMenu() {
             {menuInfo.map((item) => (
               <Menu.Item key={item.id}>
                 {({ active }) => (
-                  <div
+                  <Link
+                    href={item.href}
                     key={item.id}
                     className={`${
                       active ? "bg-violet-500 text-white" : "text-gray-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}>
                     {item.text}
-                  </div>
+                  </Link>
                 )}
               </Menu.Item>
             ))}

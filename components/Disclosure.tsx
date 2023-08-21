@@ -58,7 +58,9 @@ export default function Disclosure() {
               onClick={() => handleClick(id)}
               aria-expanded={isOpen}
               {...(isOpen && { "aria-controls": id })}>
+              {/*       <div className={classNames(isOpen ? "font-extrabold" : " ")}> */}
               {buttonText}
+              {/*            </div> */}
               <ChevronUpIcon
                 className={`${
                   isOpen ? "rotate-[-180] transform" : "rotate-180 transform"
