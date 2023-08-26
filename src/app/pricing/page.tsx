@@ -1,3 +1,5 @@
+import { Plans } from "@/components/index";
+
 export default function Pricing() {
-  return <div>pricing</div>;
+  return <Plans></Plans>;
 }

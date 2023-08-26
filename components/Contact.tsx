@@ -59,7 +59,7 @@ const Contact = ({}) => {
         <span className="mt-[-48px] xs:mr-[-240px] s:mr-[-285px] ls:mr-[-340px] lg:hidden">
           {errors.email && <Image src={errorIcon} alt="error Icon"></Image>}
         </span>
-        <button className="inline-block w-full lg:w-[30%]  h-full px-5 mt-16 py-4 text-center lg:my-5 lg:mx-4  group-invalid:pointer-events-none group-invalid:opacity-30 transition-all duration-200 ease-in-out delay-100 bg-gradient-to-br text-white bg-orange-400 hover:bg-slate-50 hover:text-orange-400 hover:bg-transparent border border-transparent  focus:ring-2 focus:outline-none focus:ring-orange-400 hover:border hover:border-orange-400 shadow-sm font-bold hover:font-medium rounded-lg text-sm ">
+        <button className="inline-block w-full lg:w-[30%]  h-full px-5 mt-16 py-4 text-center lg:my-5 lg:mx-4  group-invalid:pointer-events-none group-invalid:opacity-30 transition-all duration-200 ease-in-out delay-100 bg-gradient-to-br text-white bg-orange-400 hover:bg-slate-50 hover:text-orange-400  border border-transparent  focus:ring-2 focus:outline-none focus:ring-orange-400 hover:border hover:border-orange-400 shadow-sm font-bold hover:font-medium rounded-lg text-sm ">
           Contact Us
         </button>
       </form>

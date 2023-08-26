@@ -1,9 +1,7 @@
-import { FC } from "react";
+import NewsLetter from "@/components/NewsLetter";
 
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
-  return <div>contact</div>;
+const Contact = ({}) => {
+  return <NewsLetter />;
 };
 
-export default page;
+export default Contact;

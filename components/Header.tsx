@@ -10,7 +10,7 @@ const Header: FC<HeaderProps> = ({}) => {
       <Link href="/">
         <Image className="z-10" src={logo} alt={"logo"} priority></Image>
       </Link>
-      <MobileMenu></MobileMenu>
+      <MobileMenu />
       {/* for deskTop :  */}
       <List />
     </header>

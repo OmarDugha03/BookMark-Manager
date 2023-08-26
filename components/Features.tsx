@@ -4,7 +4,9 @@ import classNames from "classnames";
 import { fe1, fe2, fe3 } from "@/Images/index";
 import { motion as m } from "framer-motion";
 import Image from "next/image";
-import Button from "./ui/Button";
+import Button, { buttonVariants } from "./ui/Button";
+import Link from "next/link";
+
 export default function Features() {
   const FeatureInfo = [
     {
@@ -12,7 +14,7 @@ export default function Features() {
       tabName: "Simple BookMark",
       tabHeading: "Bookmark in one click",
       tabContent:
-        "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+        "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.",
       img: fe1,
     },
     {
@@ -33,7 +35,7 @@ export default function Features() {
     },
   ];
   return (
-    <div className="w-full max-w-6xl px-2 py-16 sm:px-0 ">
+    <div id="Features" className="w-full max-w-6xl px-2 py-16 sm:px-0 ">
       <Tab.Group
         manual
         as="div"
@@ -85,12 +87,14 @@ export default function Features() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="py-4 mt-4 text-center text-gray-500 lg:text-left">
+                  className="py-8 mt-4 text-center text-gray-500 lg:text-left">
                   {item.tabContent}
                 </m.p>
-                <Button variant="mine" size="lg">
+                <Link
+                  className=" py-4 px-2 w-[30%] bg-[#5368df] shadow-[0px_0px_25px_0px_#5368df] font-bold hover:font-medium hover:bg-slate-900 text-white transition-all  delay-200 duration-200 ease-in-out  rounded-lg"
+                  href="/Contact">
                   More Info
-                </Button>
+                </Link>
               </m.div>
             </Tab.Panel>
           ))}

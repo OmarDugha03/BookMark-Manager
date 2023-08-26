@@ -7,11 +7,11 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <div className="flex flex-col items-center justify-center px-2 py-12 mx-auto lg:flex lg:flex-row-reverse">
+    <div className="flex flex-col items-center justify-center py-12 mx-auto lg:flex-row-reverse">
       <Image src={hero} alt="hero" priority></Image>
-      <div className="lg:px-36">
+      <div className="px-4 lg:px-36">
         <Text size="h1">A Simple BookMark Manager</Text>
-        <Text className="py-4 text-lg font-bold text-center text-gray-500 lg:text-left">
+        <Text className="px-2 py-4 text-lg font-bold text-center text-gray-500 lg:text-left">
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </Text>

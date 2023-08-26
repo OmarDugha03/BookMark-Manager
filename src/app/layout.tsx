@@ -3,7 +3,10 @@ import { Header } from "@/components/index";
 import { Montserrat } from "next/font/google";
 import { Metadata } from "next";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: "400" });
+const montserrat = Montserrat({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "BookMark Manager ",
@@ -17,8 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={montserrat.className + " w-full bg-slate-50"}>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={
+          montserrat.className +
+          " w-full bg-slate-50 scroll-smooth selection:text-[#5368df] selection:bg-slate-950"
+        }>
         <Header />
         {children}
       </body>

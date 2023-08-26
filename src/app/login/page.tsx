@@ -1,7 +1,11 @@
-"use client";
+import Launching from "@/components/launching";
 
 const Login = ({}) => {
-  return <div>login</div>;
+  return (
+    <>
+      <Launching />
+    </>
+  );
 };
 
 export default Login;

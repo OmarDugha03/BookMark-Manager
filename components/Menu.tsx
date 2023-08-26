@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { bars, close } from "../public/images/index";
-
+// !this one is Out of use
 export default function MyDropdown() {
-  const [toogle, setToggle] = useState<boolean>(true);
+  const [toggle, setToggle] = useState<boolean>(true);
   function handleToggle() {
     return setToggle((prev) => {
       return !prev;
@@ -19,7 +19,7 @@ export default function MyDropdown() {
           <Menu.Button
             onClick={handleToggle}
             className="inline-flex justify-center w-full py-2 text-sm font-medium text-white rounded-md hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            {toogle ? (
+            {toggle ? (
               <Image
                 className="p-4 "
                 src={bars}

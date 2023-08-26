@@ -7,7 +7,7 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   const menuInfo = [
-    { id: 0, text: "Feature", href: "/featuer" },
+    { id: 0, text: "Feature", href: "#Features" },
     { id: 1, text: "Pricing", href: "/Pricing" },
     { id: 2, text: "Contact", href: "/Contact" },
   ];

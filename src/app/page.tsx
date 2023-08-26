@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Hero />
       <Featuretext />
-      <div className="lg:flex lg:justify-center lg:items-center">
+      <div className="lg:flex lg:justify-center lg:items-centers">
         <Features />
       </div>
       <DownText />

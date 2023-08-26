@@ -6,7 +6,7 @@ import { cn } from "../../lib/utils";
 export const paragraphVariants = cva("", {
   variants: {
     size: {
-      h1: "px-2 py-8 text-2xl font-extrabold text-center lg:text-left text-slate-900 lg:text-4xl",
+      h1: "px-2 py-4 text-2xl font-extrabold text-center lg:text-left text-slate-900 lg:text-4xl",
       h2: "pb-2 text-lg font-bold text-center text-slate-900 lg:text-2xl",
       h3: "pb-2 text-lg font-bold text-center text-slate-900 lg:text-2xl",
       h4: "px-2 pt-12 pb-4 text-lg font-bold text-center text-slate-900 lg:text-2xl",

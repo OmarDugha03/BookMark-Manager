@@ -52,7 +52,7 @@ export default function Disclosure() {
             className="duration-300 ease-in-out delay-100 hover:text-orange-400">
             <button
               className={classNames(
-                "flex  leading-5  hover:text-orange-400 duration-300 ease-in-out delay-100 text-left lg:text-center w-full justify-between text-lg  border-b border-slate-900 px-2 py-8 font-medium text-slate-900 lg:text-xl ",
+                "flex  leading-5  hover:text-orange-400 duration-300 ease-in-out delay-100 text-left  w-full justify-between text-lg  border-b border-slate-900 px-2 py-8 font-medium text-slate-900 lg:text-xl ",
                 id === "disclosure-panel-1" ? "border-t border-slate-900" : ""
               )}
               onClick={() => handleClick(id)}
@@ -77,7 +77,7 @@ export default function Disclosure() {
                   }}
                   exit={{
                     opacity: 0,
-                    translateY: -10,
+                    translateY: -15,
                     transition: {
                       duration: 0.3,
                     },

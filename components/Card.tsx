@@ -36,7 +36,7 @@ const Card: FC<CardProps> = ({}) => {
       {cardInfo.map((item) => (
         <div
           key={item.id}
-          className="flex flex-col items-center justify-center px-4 py-8 m-4 rounded-md bg-slate-200 shadow-[0px_0px_49px_0px_#5368df]">
+          className="flex flex-col items-center justify-center px-4 py-8 m-4 rounded-md bg-slate-200 shadow-[0px_0px_25px_0px_#5368df]">
           <Image src={item.img} alt={item.heading} priority></Image>
           <Text className="p-4 lg:text-xl">{item.heading}</Text>
           <Paragraph className="pt-4 pb-8 text-center text-gray-500 lg:text-left ">

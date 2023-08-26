@@ -7,11 +7,28 @@ import Link from "next/link";
 
 function MobileMenu() {
   const menuInfo = [
-    { id: 0, text: "Feature", href: "/feature" },
-    { id: 1, text: "Pricing", href: "/Pricing" },
-    { id: 2, text: "Contact", href: "/Contact" },
-    { id: 3, text: "Login", href: "/Login" },
+    {
+      id: 0,
+      text: "Feature",
+      href: "./#Features",
+    },
+    {
+      id: 1,
+      text: "Pricing",
+      href: "/Pricing",
+    },
+    {
+      id: 2,
+      text: "Contact",
+      href: "/Contact",
+    },
+    {
+      id: 3,
+      text: "Login",
+      href: "/Login",
+    },
   ];
+
   const [toggle, setToggle] = useState<boolean>(true);
   function handleToggle() {
     return setToggle((prev) => {
@@ -19,7 +36,7 @@ function MobileMenu() {
     });
   }
   return (
-    <div className="text-sm text-right w-36 lg:hidden ">
+    <div className="z-10 text-sm text-right w-36 lg:hidden">
       <Menu as="div" className="inline-block py-2 text-left">
         <div>
           <Menu.Button
@@ -57,6 +74,7 @@ function MobileMenu() {
               <Menu.Item key={item.id}>
                 {({ active }) => (
                   <Link
+                    onClick={handleToggle}
                     href={item.href}
                     key={item.id}
                     className={`${

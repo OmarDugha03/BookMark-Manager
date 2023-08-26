@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { FC } from "react";
-import { buttonVariants } from "@/components/ui/Button";
+
 interface ListProps {}
 
 const List: FC<ListProps> = ({}) => {
@@ -9,22 +9,22 @@ const List: FC<ListProps> = ({}) => {
     {
       id: 0,
       text: "Feature",
-      href: "/feature",
+      href: "./#Features",
     },
     {
       id: 1,
       text: "Pricing",
-      href: "/pricing",
+      href: "/Pricing",
     },
     {
       id: 2,
       text: "Contact",
-      href: "/contact",
+      href: "/Contact",
     },
     {
       id: 3,
       text: "Login",
-      href: "/login",
+      href: "/Login",
     },
   ];
   return (

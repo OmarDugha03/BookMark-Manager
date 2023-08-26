@@ -5,7 +5,7 @@ interface FeaturetextProps {}
 
 const Featuretext: FC<FeaturetextProps> = ({}) => {
   return (
-    <div className="flex flex-col items-center justify-center  text-center lg:px-[24rem] bg-[#EDF2F7] my-8 py-12">
+    <div className="flex flex-col items-center justify-center px-2 text-center lg:px-[24rem] bg-[#EDF2F7] my-8 py-12">
       <h1 className="px-2 py-8 text-2xl font-bold text-center lg:py-4 text-slate-900 lg:text-4xl">
         Features
       </h1>
