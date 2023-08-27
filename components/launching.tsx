@@ -71,7 +71,12 @@ const Launching: FC<LaunchingProps> = ({}) => {
             Notify Me
           </Button>
         </form>
-        <Image src={dashboard} alt="dashboard" className="px-4 py-8 lg:px-24" />
+        <Image
+          src={dashboard}
+          alt="dashboard"
+          className="px-4 py-8 lg:px-24"
+          priority
+        />
         <div className="flex items-center justify-center py-4 ">
           <Link target="_blank" href="https://www.facebook.com/">
             <FaFacebookSquare className="lg:text-5xl duration-300 ease-in-out delay-100 cursor-pointer text-[30px] hover:text-orange-400"></FaFacebookSquare>

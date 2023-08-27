@@ -66,14 +66,14 @@ export default function Features() {
               )}
               key={item.id}>
               <m.div
-                initial={{ opacity: 0, scale: 1.2 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1 }}>
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}>
                 <Image src={item.img} alt="features" priority />
               </m.div>
               <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
                 className="lg:pl-6 lg:w-96 lg:flex lg:flex-col lg:justify-center lg:items-start">
                 <m.h2
