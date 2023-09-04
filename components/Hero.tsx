@@ -18,7 +18,7 @@ const Hero: FC<HeroProps> = ({}) => {
         <Image src={hero} alt="hero" priority></Image>
         <div className="px-4 lg:px-36">
           <Text size="h1">A Simple BookMark Manager</Text>
-          <Text className="px-2 py-4 text-lg font-bold text-center text-gray-500 lg:text-left">
+          <Text className="px-2 py-4 font-bold text-center text-gray-500 lg:text-left">
             A clean and simple interface to organize your favorite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
