@@ -77,8 +77,8 @@ const NewsLetter = ({}) => {
             <form
               onSubmit={handleSubmit(onSubmit)}
               noValidate
-              className="py-4 mt-4 group">
-              <label htmlFor="email" className="mx-2 text-xs font-bold ">
+              className="flex flex-col py-4 mt-4 group ">
+              <label htmlFor="email" className="mx-2 my-2 text-xs font-bold ">
                 Email address
               </label>
               <input
@@ -97,7 +97,7 @@ const NewsLetter = ({}) => {
                 type="email"
                 placeholder="Enter Your Email Address"
                 className={classNames(
-                  "w-full h-12 pl-4 md:w-[80%] leading-tight text-gray-700 bg-gray-200 border-2 border-gray-200 rounded appearance-none   focus:shadow-outline focus:outline-none focus:bg-white focus:border-[#5368df]",
+                  "w-full h-12 my-4 pl-4 md:w-[80%] leading-tight text-gray-700 bg-gray-200 border-2 border-gray-200 rounded appearance-none   focus:shadow-outline focus:outline-none focus:bg-white focus:border-[#5368df]",
                   errors.email
                     ? `bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm    focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400 `
                     : " "
@@ -109,7 +109,7 @@ const NewsLetter = ({}) => {
               <button
                 type="button"
                 onClick={() => setHandleSub(false)}
-                className=" inline-block w-full h-full md:w-[80%]   px-5 py-4 mt-4 text-sm font-bold text-center text-white transition-all duration-200 ease-in-out delay-100 bg-orange-400 border border-transparent rounded-lg shadow-sm hover:bg-slate-900 hover:text-white group-invalid:pointer-events-none group-invalid:opacity-50 bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-slate-900 hover:border hover:border-slate-900 hover:font-medium ">
+                className=" inline-block w-full h-full md:w-[80%]   px-5 py-4 mt-8 text-sm font-bold text-center text-white transition-all duration-200 ease-in-out delay-100 bg-orange-400 border border-transparent rounded-lg shadow-sm hover:bg-slate-900 hover:text-white group-invalid:pointer-events-none group-invalid:opacity-50 bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-slate-900 hover:border hover:border-slate-900 hover:font-medium ">
                 Subscribe
               </button>
             </form>

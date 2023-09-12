@@ -1,10 +1,8 @@
 "use client";
 import classNames from "classnames";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Button from "./ui/Button";
 import { errorIcon } from "@/Images/index";
 import Image from "next/image";
-import { motion as m } from "framer-motion";
 type Inputs = {
   email: string;
 };
