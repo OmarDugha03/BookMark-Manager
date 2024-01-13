@@ -1,0 +1,15 @@
+.bgImagetopmobile {
+        background: transparent url("../../public/images/bg-pattern-top-mobile.svg") no-repeat right top  ;
+
+}
+.bgImagebottommobile {
+background: transparent url("../../public/images/bg-pattern-top-mobile.svg") no-repeat right bottom;
+
+}
+.bgImagetopdesc {
+background: transparent url("../../public/images/bg-pattern-top-mobile.svg") no-repeat right top;
+}
+.bgImagebottomdesc {
+background: transparent url("../../public/images/bg-pattern-top-mobile.svg") no-repeat right top;
+
+}
