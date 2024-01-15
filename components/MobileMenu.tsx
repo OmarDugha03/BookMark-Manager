@@ -15,17 +15,17 @@ function MobileMenu() {
     {
       id: 1,
       text: "Pricing",
-      href: "/Pricing",
+      href: "/pricing",
     },
     {
       id: 2,
       text: "Contact",
-      href: "/Contact",
+      href: "/contact",
     },
     {
       id: 3,
       text: "Login",
-      href: "/Login",
+      href: "/login",
     },
   ];
 
