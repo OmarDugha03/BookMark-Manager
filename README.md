@@ -8,7 +8,7 @@ Bookmark Manager envisions supporting a variety of eBook and PDF formats, highli
 
 ## How to use it?
 
-Simply go to the official website and hit the "Get Started" button, or [click here](#). Afterward, sign up for free and try the primer version; no credit card is needed. From there, you can import and export your libraries. Bookmark Manager, in its conceptual form, is a canvas that paints a picture of frontend mastery. While not a functioning app, it highlights the depth of frontend skills in creating engaging, user-friendly interfaces. Immerse yourself in the visualization of what could be – a frontend masterpiece that brings the theoretical joy of reading to life through the art of conceptual design.
+Simply go to the official website and hit the "Get Started" button, or [click here](https://bookmark-manager.pages.dev/). Afterward, sign up for free and try the primer version; no credit card is needed. From there, you can import and export your libraries. Bookmark Manager, in its conceptual form, is a canvas that paints a picture of frontend mastery. While not a functioning app, it highlights the depth of frontend skills in creating engaging, user-friendly interfaces. Immerse yourself in the visualization of what could be – a frontend masterpiece that brings the theoretical joy of reading to life through the art of conceptual design.
 
 ## Please note that
 
